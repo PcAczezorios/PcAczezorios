@@ -1,0 +1,33 @@
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+header > div > input{
+    width: 300px;
+}
+
+#div_login{
+    position: relative;
+    display: flex;
+}
+
+#div_oculto_login{
+    position: absolute;
+    top: 30px;
+    left: -70px;
+}
+#div_login .no_oculto{
+    opacity: 1;
+    transition: all .3s;
+}
+#div_login .oculto{
+    opacity: 0;
+    top: -100px;
+    transform: scale(0);
+    transition: all .15s;
+}
+
+#div_oculto_login > form > fieldset{
+    display: grid;
+    gap: 10px 0;
+}
