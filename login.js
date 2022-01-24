@@ -10,7 +10,7 @@ function getUser(username) {
   return allUsers.find((user) => user.username === username);
 }
 
-// Añadir usuario al almacenamiento del navegador
+// Añadir nuevo usuario al almacenamiento del navegador
 function addUser({ username, pass }) {
   let allUsers = getUsers();
   allUsers.push({ username, pass });
