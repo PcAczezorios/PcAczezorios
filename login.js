@@ -41,9 +41,13 @@ function getDatosFormulario() {
 }
 
 function cambiarLoginVisibilidad() {
-  divOculto.className === "no_oculto"
-    ? (divOculto.className = "oculto")
-    : (divOculto.className = "no_oculto");
+  if (divOculto.classList.contains("no_oculto")) {
+    divOculto.classList.remove("no_oculto");
+    divOculto.classList.add("oculto");
+  } else {
+    divOculto.classList.remove("oculto");
+    divOculto.classList.add("no_oculto");
+  }
 }
 
 function loginCorrecto(nick) {
@@ -54,9 +58,11 @@ function loginCorrecto(nick) {
 function mostrarLoginMensaje(mensaje, color) {
   infoLogin.style.color = color;
   infoLogin.textContent = mensaje;
-  infoLogin.className = "no_oculto";
+  infoLogin.classList.remove("oculto");
+  infoLogin.classList.add("no_oculto");
   setTimeout(() => {
-    infoLogin.className = "oculto";
+    infoLogin.classList.remove("no_oculto");
+    infoLogin.classList.add("oculto");
   }, 2000);
 }
 
