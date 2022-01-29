@@ -1,0 +1,36 @@
+.carousel-inner {
+    text-align: center;
+    margin-right: 11cm;
+}
+.carousel-control-prev {
+    margin-top: 2.5cm;
+    margin-left: 11cm;
+}
+
+.carousel-control-next{
+    margin-top: 2.5cm;
+    margin-right: 11cm;
+}
+
+.carousel-item {
+    height: 300px;
+    width: 300px;
+    margin-left: 550px;
+    margin-top: 50px;
+    margin-bottom: -75px;
+}
+
+.bi {
+    color: black;
+    font-size: 1.4em;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 70px;
+    height: 70px;
+}
+
+.carousel-indicators li {
+    background-color: black;
+    height: 4px;
+}

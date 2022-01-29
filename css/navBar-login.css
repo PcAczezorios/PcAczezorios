@@ -1,0 +1,62 @@
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+header > div{
+    display: flex;
+}
+header > div > input{
+    width: 300px;
+}
+
+#div_login{
+    position: relative;
+    display: flex;
+    padding-right: 70px;
+}
+
+#div_oculto_login{
+    position: absolute;
+    top: 35px;
+    left: -66px;
+    z-index: 90000;
+    margin-top: 25px;
+}
+
+#div_oculto_login input[type=text],
+#div_oculto_login input[type=password]  {
+    border-radius: 8px;
+    padding: 0 5px;
+    border: 0.5px solid black;
+}
+
+#div_oculto_login input[type=text]:focus,
+#div_oculto_login input[type=password]:focus {
+	outline: none;
+    border-color: #7539aa;
+}
+
+
+#div_login .no_oculto{
+    opacity: 1;
+    width: 290px;
+    transition: all .3s;
+}
+
+#div_login .oculto{
+    opacity: 0;
+    top: -100px;
+    transform: scale(0);
+    transition: all .15s;
+}
+
+#div_oculto_login > form > fieldset{
+    display: inline-flex;
+    gap: 10px 0;
+    background-color: rgb(216, 216, 216);
+    border-radius: 32px;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+}
