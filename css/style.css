@@ -2,12 +2,11 @@
 	box-sizing: border-box;
 }
 
-body {
+#div_body {
 	margin: 10px 15px;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 }
 
 header {
@@ -15,6 +14,7 @@ header {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	margin-bottom: 70px;
 }
 
 ul {
@@ -58,8 +58,12 @@ nav .bi {
 }
 
 footer {
+	display: flex;
+	background-color: black;
+    color: white;
+    margin: 0;
     text-align: center;
-    height: 5em;
+    height: 7em;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;

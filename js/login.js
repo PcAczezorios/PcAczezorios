@@ -45,6 +45,7 @@ function cambiarLoginVisibilidad() {
     divOculto.classList.remove("no_oculto");
     divOculto.classList.add("oculto");
   } else {
+    divOculto.getElementsByTagName("form")[0].elements[1].select()
     divOculto.classList.remove("oculto");
     divOculto.classList.add("no_oculto");
   }
