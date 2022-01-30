@@ -57,18 +57,6 @@ nav .bi {
 	margin-right: 10px;
 }
 
-footer {
-	display: flex;
-	background-color: black;
-    color: white;
-    margin: 0;
-    text-align: center;
-    height: 7em;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}
-
 input[type=search] {
 	width: 300px;
 	box-sizing: border-box;
@@ -167,4 +155,21 @@ button .bi {
 
 .login-button:focus {
 	outline: none;
+}
+
+footer {
+	display: flex;
+	background-color: black;
+    color: white;
+    margin: 0;
+    text-align: center;
+    height: 7em;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+footer > div{
+    max-width: 1000px;
+    margin: 0 auto;
 }
