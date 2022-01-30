@@ -1,3 +1,7 @@
+#productos-destacados {
+	margin-bottom: 20px;
+}
+
 .carousel-inner {
     text-align: center;
     margin-right: 11cm;
@@ -16,8 +20,8 @@
     height: 300px;
     width: 300px;
     margin-left: 550px;
-    margin-top: 50px;
-    margin-bottom: -75px;
+    /* margin-top: 50px; */
+    /* margin-bottom: -75px; */
 }
 
 .bi {
