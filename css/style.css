@@ -2,19 +2,31 @@
 	box-sizing: border-box;
 }
 
-#div_body {
-	margin: 10px 15px;
+body {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 }
 
 header {
+	position: fixed;
+	width: 100%;
     height: 5em;
+	z-index: 1000;
+	padding: 10px 15px;
+	background-color: white;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	margin-bottom: 70px;
+	box-shadow: 
+		0 2px 2px 0 rgba(0, 0, 0, 0.14),
+		0 3px 1px -2px rgba(0, 0, 0, 0.2),
+		0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+header img[onclick] {
+	cursor: pointer;
 }
 
 ul {
@@ -74,7 +86,7 @@ input[type=search] {
 }
   
 input[type=search]:focus {
-	width: 500px;
+	width: 450px;
 	outline: none;
 	border-color: #7539aa;
 }
@@ -155,6 +167,18 @@ button .bi {
 
 .login-button:focus {
 	outline: none;
+}
+
+main {
+	margin-top: 70px;
+	margin-bottom: 70px;
+	padding-top: 5em; /* Espacio necesario equivalente a la altura del header */
+}
+
+main h2 {
+	text-align: center;
+	font-weight: bold;
+	color: #7539aa;
 }
 
 footer {
