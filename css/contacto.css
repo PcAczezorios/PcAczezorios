@@ -70,3 +70,8 @@ input[type=file]::-webkit-file-upload-button:hover {
     color: white;
     background-color: #7539aa;
 }
+
+.tabla-contacto {
+    border-spacing: 5px;
+    border-collapse: separate;
+}
