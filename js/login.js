@@ -79,7 +79,8 @@ loginBoton.addEventListener("click", () => {
 });
 
 // Enviar formulario - 'Acceder'
-divOculto.getElementsByTagName("form")[0].addEventListener("submit", () => {
+divOculto.getElementsByTagName("form")[0].addEventListener("submit", (e) => {
+  e.preventDefault();
   const newUser = getDatosFormulario();
   acceder(newUser.nick, newUser.pass)
     ? loginCorrecto(newUser.nick)
