@@ -170,8 +170,8 @@ button .bi {
 }
 
 main {
-	margin-top: 70px;
-	margin-bottom: 70px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 	padding-top: 5em; /* Espacio necesario equivalente a la altura del header */
 }
 
@@ -196,4 +196,11 @@ footer {
 footer > div{
     max-width: 1000px;
     margin: 0 auto;
+}
+
+#logo {
+	height: 30px;
+    width: auto;
+	margin-bottom: 6px;
+	margin-right: -2px;
 }
