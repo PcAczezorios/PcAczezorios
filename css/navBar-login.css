@@ -14,19 +14,20 @@ header > div > input{
     position: relative;
     display: flex;
     padding-right: 70px;
-    width: 270px;
+    min-width: 270px;
     justify-content: center;
 }
 
 #div_login > button{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #div_oculto_login{
     position: absolute;
     top: 35px;
-    left: -66px;
+    left: -53px;
     z-index: 90000;
     margin-top: 25px;
 }
