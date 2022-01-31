@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/carrusel.css">
   <link rel="stylesheet" href="css/navBar-login.css">
+  <link rel="stylesheet" href="css/historia.css">
   <link rel="stylesheet" href="css/contacto.css">
 </head>
 
@@ -63,10 +64,105 @@
       </div>
     </header>
     <main id="contacto">
-	<h1>Contacto</h1>
-	<div class="texto">
-		<p>En proceso...</p>
-	</div>
+      <h1>Contacto</h1>
+
+      <div class="texto">
+        <form>
+          <fieldset>
+              <table class="tabla-contacto" border="0" CELLPADDING="5">
+                  <tr>
+                      <td>
+                          <label>Nombre:  </label>
+                          <input type="text"/>
+                      </td>
+                      <td>
+                          <label>Apellidos:  </label>
+                          <input type="text"/>
+                      </td>
+                  </tr>
+
+                  <tr>
+                      <td colspan="2">
+                          <label>Email:  </label>
+                          <input type="email"/>
+                      </td>
+                  </tr>
+  
+                  <tr>
+                      <td>
+                          <label>Sexo:  </label>
+                      </td>
+                      <td>
+                          <input type="radio" id="hombre" name="sexo" value="hombre"/>
+                          <label for="hombre">Hombre: </label>
+                          <input type="radio" id="mujer" name="sexo" value="mujer"/>
+                          <label for="mujer">Mujer:</label>
+                      </td>
+                  </tr>
+  
+                  <tr>
+                      <td>
+                          <label>Motivo de contacto:  </label>
+                      </td>
+                      <td>
+                          <div>
+                              <label>Componentes </label>
+                              <input type="checkbox" name="Aficiones" value="Deporte"/>
+                          </div>
+                          <div>
+                              <label>Ordenadores portatiles </label>
+                              <input type="checkbox" name="Aficiones" value="Lectura"/>
+                          </div>
+                          <div>
+                              <label>Otros </label>
+                              <input type="checkbox" name="Aficiones" value="Cine"/></td>
+                          </div>
+                      </td>
+                  </tr>
+  
+                  <tr>
+                      <td>
+                          <label>Pais:  </label>
+                      </td>
+                      <td>
+                      <select name="Pais:" class="select-pais">
+                          <option selected value="España">España</option>
+                          <option value="Andorra">Andorra</option>
+                          <option value="Mozambique">Mozambique</option>
+                      </select>
+                      </td>
+                  </tr>
+  
+                  <tr>
+                      <td>
+                          <label>Subir una foto descriptiva:  </label>
+                      </td>
+                      <td>
+                          <input type="file"/>
+                      </td>
+                  </tr>
+  
+                  <tr>
+                      <td>
+                          <label>Descripcion sobre el motivo de contacto:</label>
+                      </td>
+                      <td>
+                          <textarea name="descripcion" cols="40" rows="5" placeholder="Escriba aqui sobre el motivo de contacto"></textarea>
+                      </td>
+                  </tr>
+  
+                  <tr>
+                      <td>
+                          <input type="reset" value="Resetear" name="Resetear"/>
+                      </td>
+                      <td>
+                          <button type="submit" value="Enviar" onclick="alert('Formulario enviado correctamente! Espere nuestro mensaje');">Enviar</button>
+                      </td>
+                  </tr>
+              </table>
+          </fieldset>
+      </form>
+      </div>
     </main>
 
   <footer>
@@ -85,5 +181,4 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
 </body>
-
 </html>
