@@ -8,7 +8,7 @@
     color: blueviolet;
 }
 
-form fieldset {
+.texto form fieldset {
     border: solid 0.5px blueviolet;
     border-radius: 32px;
     padding: 10px 10px 10px 10px;
@@ -61,12 +61,12 @@ input[type=file]::-webkit-file-upload-button {
     outline: none;
     border: solid 0.5px #7539aa;
     border-radius: 5px;
-	background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.8);
     transition: all .3s ease-in-out;
     padding: 10px 10px 10px 10px;
 }
 
 input[type=file]::-webkit-file-upload-button:hover {
     color: white;
-	background-color: #7539aa;
+    background-color: #7539aa;
 }
