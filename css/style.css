@@ -197,3 +197,10 @@ footer > div{
     max-width: 1000px;
     margin: 0 auto;
 }
+
+#logo {
+	height: 30px;
+    width: auto;
+	margin-bottom: 6px;
+	margin-right: -2px;
+}
