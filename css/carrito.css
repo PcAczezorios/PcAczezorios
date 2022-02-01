@@ -1,0 +1,22 @@
+.añadir-carrito {
+    color: #7539aa;
+    background-color: white;
+    border: solid 1px #7539aa;
+    font-weight: bold;
+}
+
+.carrito {
+    margin: 30px auto;
+    white-space: nowrap;
+    border: solid 1px #7539aa;
+    width: fit-content;
+    padding: 10px 10px;
+    border-radius: 32px;
+}
+
+.articulossss {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
