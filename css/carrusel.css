@@ -46,3 +46,11 @@
     background-color: black;
     height: 4px;
 }
+
+img.d-block {
+    margin-left: 2.5cm;
+}
+
+#amd, #ps5{
+    margin-top: -10px;
+}
