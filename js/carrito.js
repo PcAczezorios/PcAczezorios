@@ -39,7 +39,7 @@ function comprarTodoClickado(){
 
 function eliminarDelCarrito(event){
     var botonClickado = event.target
-    botonClickado.parentElement.remove()
+    botonClickado.parentElement.parentElement.remove()
     actualizarPrecioTotalCarrito()
 }
 
@@ -55,7 +55,7 @@ function añadirAlCarritoClickado(event){
 }
 
 function añadirItemAlCarrito(titulo, precio, imagenSrc){
-    var carritoItem = document.createElement('div')
+    var carritoItem = document.createElement('tr')
     carritoItem.classList.add('articulo-en-carrito')
     var objetosCarrito = document.getElementsByClassName('objetos-carrito')[0]
     var objetosCarritoNombres = objetosCarrito.getElementsByClassName('nombre-producto')
@@ -67,11 +67,14 @@ function añadirItemAlCarrito(titulo, precio, imagenSrc){
         }
     }
     var carritoItemContenido = 
-		`<img src="${imagenSrc}" width="128" height="128" class="imagen-articulo">
-		<span class="nombre-producto">${titulo}</span>
-		<span class="precio-producto">${precio} €</span>
-		<input type="number" min="1" value="1" class="cantidad-producto">
-		<button class="borrar-carrito boton-terciario">Borrar</button>`
+		`
+			<td><input type="number" min="1" value="1" class="cantidad-producto"></td>
+			<td><img src="${imagenSrc}" width="128" height="128" class="imagen-articulo"></td>
+			<td><span class="nombre-producto">${titulo}</span></td>
+			<td><span class="precio-producto">${precio} €</span></td>
+			<td><span class="precio-cantidad">${precio} €</span></td>
+			<td><button class="borrar-carrito boton-terciario">Borrar</button></td>
+		`
     carritoItem.innerHTML = carritoItemContenido
     objetosCarrito.append(carritoItem)
     carritoItem.getElementsByClassName('borrar-carrito')[0].addEventListener('click', eliminarDelCarrito)
@@ -96,7 +99,9 @@ function actualizarPrecioTotalCarrito(){
         var cantidadProductos = carritoItem.getElementsByClassName('cantidad-producto')[0]
         var cantidad = cantidadProductos.value
         var precio = parseFloat(precioElemento.textContent.replace(',', '.').replace(' €', '')).toFixed(2)
-        total = total + (precio * cantidad)
+		var precioCantidad = (precio * cantidad).toFixed(2)
+		carritoItem.getElementsByClassName('precio-cantidad')[0].innerHTML = precioCantidad.toString().replace('.', ',') + " €"
+        total = total + precioCantidad
     }
     total = (Math.round(total * 100) / 100).toFixed(2)
     document.getElementsByClassName('precio-total')[0].innerText = total.toString().replace('.', ',') + " €"

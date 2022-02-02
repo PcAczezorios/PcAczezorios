@@ -165,22 +165,33 @@
 			</article>
 		</div>
 	</section>
-	<section class="carrito">
-		<div>
-			<h3>Elementos del carrito</h3>
-		</div>
-		<div class="producto">
-			<span>ITEM</span>
-			<span>PRICE</span>
-			<span>QUANTITY</span>
-		</div>
-		<div class="objetos-carrito">
-			<!-- Se rellena con JS -->
-		</div>
-		<div>
+	<section id="carrito">
+		<h3>Elementos del carrito</h3>
+		<table>
+			<thead>
+				<tr>
+					<th>CANTIDAD</th>
+					<th>IMAGEN</th>
+					<th>NOMBRE</th>
+					<th>PRECIO/UD</th>
+					<th>PRECIO</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody class="objetos-carrito">
+				<!-- Se rellena con JS -->
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>Total: </th>
+					<td class="precio-total">0, 00€</td>
+				</tr>
+			</tfoot>
+		</table>
+		<!-- <div>
 			<span>Total: </span>
 			<span class="precio-total">0,00 €</span>
-		</div>
+		</div> -->
 			<button class="comprar boton-primario">Comprar</button>
 	</section>
 </main>
