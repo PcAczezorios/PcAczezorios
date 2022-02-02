@@ -30,17 +30,26 @@ function ready(){
 
 function comprarTodoClickado(){
     alert('Gracias por su compra!')
-    var itemsCarrito = document.getElementsByClassName('objetos-carrito')[0]
+    var itemsCarrito = document.getElementById('objetos-carrito')
     while (itemsCarrito.hasChildNodes()) {
         itemsCarrito.removeChild(itemsCarrito.firstChild)
     }
     actualizarPrecioTotalCarrito()
+	document.getElementById('carrito').classList.add('oculto')
 }
 
 function eliminarDelCarrito(event){
     var botonClickado = event.target
     botonClickado.parentElement.parentElement.remove()
     actualizarPrecioTotalCarrito()
+
+	// Ocultar carrito si está vacío
+	var carrito = document.getElementById('carrito')
+	var itemsCarrito = document.getElementById('objetos-carrito')
+
+	if (!itemsCarrito.hasChildNodes()) {
+		carrito.classList.add('oculto')
+	}
 }
 
 function añadirAlCarritoClickado(event){
@@ -52,12 +61,15 @@ function añadirAlCarritoClickado(event){
     var imagenSrc = articuloTienda.getElementsByClassName('imagen-articulo')[0].src
     añadirItemAlCarrito(titulo, precio.toString().replace('.', ','), imagenSrc)
     actualizarPrecioTotalCarrito()
+
+	// Mostrar carrito
+	document.getElementById('carrito').classList.remove('oculto')
 }
 
 function añadirItemAlCarrito(titulo, precio, imagenSrc){
     var carritoItem = document.createElement('tr')
     carritoItem.classList.add('articulo-en-carrito')
-    var objetosCarrito = document.getElementsByClassName('objetos-carrito')[0]
+    var objetosCarrito = document.getElementById('objetos-carrito')
     var objetosCarritoNombres = objetosCarrito.getElementsByClassName('nombre-producto')
     for (var i = 0; i < objetosCarritoNombres.length; i++){
         console.log(objetosCarritoNombres[i])
@@ -90,7 +102,7 @@ function cambioCantidad(event){
 }
 
 function actualizarPrecioTotalCarrito(){
-    var contenedorObjetosCarrito = document.getElementsByClassName('objetos-carrito')[0]
+    var contenedorObjetosCarrito = document.getElementById('objetos-carrito')
     var productos = contenedorObjetosCarrito.getElementsByClassName('articulo-en-carrito')
     var total = 0;
     for (var i = 0; i < productos.length; i++){
