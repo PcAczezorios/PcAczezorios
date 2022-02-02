@@ -2,7 +2,6 @@
 	box-sizing: border-box;
 }
 
-
 body {
 	min-height: 100vh;
 	display: flex;
@@ -76,7 +75,7 @@ nav .bi {
 }
 
 input[type=search] {
-	width: 300px;
+	width: 350px;
 	box-sizing: border-box;
 	border: 2px solid #ccc;
 	border-radius: 32px;
@@ -92,7 +91,6 @@ input[type=search] {
 }
   
 input[type=search]:focus {
-	width: 420px;
 	outline: none;
 	border-color: #7539aa;
 }
@@ -228,4 +226,50 @@ footer > div{
     width: auto;
 	margin-bottom: 6px;
 	margin-right: -2px;
+}
+
+nav a {
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+	padding: 10px;
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	transition: all .3s ease-in-out;
+} 	nav a:hover,
+	nav a:active {
+		text-decoration: none;
+		background-color: #7539aa;
+		color: white;
+	}	nav a:hover i,
+		nav a:active i {
+			color: white;
+		}
+
+.boton-inicio-ses, .carrito-a {
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+	padding: 10px;
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	transition: all .3s ease-in-out;
+}
+
+.boton-inicio-ses:hover, .boton-inicio-ses:active, .carrito-a:hover, .carrito-a:active {
+	text-decoration: none;
+	background-color: #7539aa;
+	color: white;
+}
+
+.carrito-a:hover i, .carrito-a:active i {
+	color: white;
+}
+
+.carrito-a i {
+	padding-right: 10px;
 }

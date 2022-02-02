@@ -21,20 +21,21 @@
 <body>
   <header>
     <div>
-      <img src="img/logo-violeta.png" width="138" height="48" onclick="location.href='index.html'"
+      	<img src="img/logo-violeta.png" width="138" height="48" onclick="location.href='index.html'"
         alt="PcAczezorios" title="PcAczezorios">
-      <nav>
-        <ul>
-          <li><a href="index.html"><i class="bi bi-house-door-fill"></i>Inicio</a></li>
-          <li><a href="contacto.html"><i class="bi bi-telephone-fill"></i>Contacto</a></li>
-          <li><a href="historia.html"><i class="bi bi-info-circle-fill"></i>Sobre Nosotros</a></li>
-        </ul>
-      </nav>
-      <input type="search" placeholder="Búsqueda">
+      	<nav>
+			<ul>
+			<li><a href="index.html"><i class="bi bi-house-door-fill"></i>Inicio</a></li>
+			<li><a href="contacto.html"><i class="bi bi-telephone-fill"></i>Contacto</a></li>
+			<li><a href="historia.html"><i class="bi bi-info-circle-fill"></i>Sobre Nosotros</a></li>
+			</ul>
+		</nav>
+      	<input type="search" placeholder="Búsqueda">
+	  	<a href="#carrito-enlace" class="carrito-a"><i class="bi bi-cart-fill"></i>Carrito</a>
     </div>
     <!-- Login -->
     <div id="div_login">
-      <button><i class="bi bi-person-circle"></i><span>Inicio de sesión</span></button>
+      <button class="boton-inicio-ses"><i class="bi bi-person-circle"></i><span>Inicio de sesión</span></button>
 
       <!-- Barra oculta de Login -->
       <!-- Unicamente a partir de aqui sería la parte útil -->
@@ -166,6 +167,7 @@
 		</div>
 	</section>
 	<section id="carrito" class="oculto">
+		<span id="carrito-enlace"></span> <!-- Vacio ya que solo sirve de enlace -->
 		<h3>Carrito</h3>
 		<table>
 			<thead>
