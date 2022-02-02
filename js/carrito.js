@@ -73,7 +73,7 @@ function añadirItemAlCarrito(titulo, precio, imagenSrc){
 			<td><span class="nombre-producto">${titulo}</span></td>
 			<td><span class="precio-producto">${precio} €</span></td>
 			<td><span class="precio-cantidad">${precio} €</span></td>
-			<td><button class="borrar-carrito boton-terciario">Borrar</button></td>
+			<td><button class="borrar-carrito boton-terciario bi bi-trash" title="Quitar del carrito"></button></td>
 		`
     carritoItem.innerHTML = carritoItemContenido
     objetosCarrito.append(carritoItem)
@@ -102,7 +102,6 @@ function actualizarPrecioTotalCarrito(){
 		var precioCantidad = (precio * cantidad).toFixed(2)
 		carritoItem.getElementsByClassName('precio-cantidad')[0].innerHTML = precioCantidad.toString().replace('.', ',') + " €"
         total = total + (precio * cantidad)
-		console.log("Item: " + i + ", total = " + total)
     }
     total = (Math.round(total * 100) / 100).toFixed(2)
     document.getElementsByClassName('precio-total')[0].innerText = total.toString().replace('.', ',') + " €"

@@ -2,7 +2,55 @@
     margin: 30px auto;
     white-space: nowrap;
     border: solid 1px #7539aa;
+	min-width: 830px;
     width: fit-content;
-    padding: 10px 10px;
+    padding: 20px;
     border-radius: 32px;
+}
+
+#carrito table {
+	margin: 20px 0px;
+	width: 100%;
+}
+
+#carrito thead,
+#carrito tbody {
+	text-align: left;
+}
+
+#carrito thead {
+	background-color: #7539aa;
+	color: white;
+	font-weight: bold;
+}
+
+#carrito th,
+#carrito td {
+	padding: 10px;
+}
+
+#carrito tbody tr {
+	border-bottom: 1px solid #7539aa;
+	transition: all .3s ease-in-out;
+}	#carrito tbody tr:hover {
+	border-color: #be91ff;
+}
+
+.articulo-en-carrito input[type='number'] {
+	max-width: 36px;
+	border: none;
+	border-bottom: 2px solid #7539aa;
+	outline: none;
+	transition: all .3s ease-in-out;
+}	.articulo-en-carrito input[type='number']:hover,
+	.articulo-en-carrito input[type='number']:focus {
+		border-color: #be91ff;
+	}
+
+
+#carrito tfoot .precio-total {
+	font-size: 1.4em;
+	font-weight: bold;
+	color: #7539aa;
+	text-align: right;
 }
