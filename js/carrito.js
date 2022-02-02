@@ -101,7 +101,8 @@ function actualizarPrecioTotalCarrito(){
         var precio = parseFloat(precioElemento.textContent.replace(',', '.').replace(' €', '')).toFixed(2)
 		var precioCantidad = (precio * cantidad).toFixed(2)
 		carritoItem.getElementsByClassName('precio-cantidad')[0].innerHTML = precioCantidad.toString().replace('.', ',') + " €"
-        total = total + precioCantidad
+        total = total + (precio * cantidad)
+		console.log("Item: " + i + ", total = " + total)
     }
     total = (Math.round(total * 100) / 100).toFixed(2)
     document.getElementsByClassName('precio-total')[0].innerText = total.toString().replace('.', ',') + " €"
