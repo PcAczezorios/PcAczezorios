@@ -71,7 +71,7 @@ function añadirItemAlCarrito(titulo, precio, imagenSrc){
 		<span class="nombre-producto">${titulo}</span>
 		<span class="precio-producto">${precio} €</span>
 		<input type="number" min="1" value="1" class="cantidad-producto">
-		<button class="borrar-carrito">Borrar</button>`
+		<button class="borrar-carrito boton-terciario">Borrar</button>`
     carritoItem.innerHTML = carritoItemContenido
     objetosCarrito.append(carritoItem)
     carritoItem.getElementsByClassName('borrar-carrito')[0].addEventListener('click', eliminarDelCarrito)

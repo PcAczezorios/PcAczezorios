@@ -22,7 +22,9 @@ td input[type=text], td input[type=email] {
     padding-left: 10px;
 }
 
-td input[type=reset] {
+
+/* Las clases de boton primario, secundario y terciario se ocupan de esto */
+/* td input[type=reset] {
 	background-color: rgba(255,255,255,0.8);
 	border: none;
 	color: black;
@@ -37,13 +39,13 @@ td input[type=reset] {
 }
 
 td input[type=reset]:hover {
-	color: white;
+	color: #be91ff;
 	background-color: #7539aa;
 }
 
 td input[type=reset]:focus {
 	outline: none;
-}
+} */
 
 .select-pais {
     outline: none;
@@ -69,6 +71,12 @@ input[type=file]::-webkit-file-upload-button {
 input[type=file]::-webkit-file-upload-button:hover {
     color: white;
     background-color: #7539aa;
+}
+
+textarea {
+	border-radius: 5px;
+	border-color: #7539aa;
+	outline: none;
 }
 
 .tabla-contacto {
