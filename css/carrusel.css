@@ -2,6 +2,10 @@
 	margin-bottom: 20px;
 }
 
+#carouselExampleIndicators {
+	padding: 30px 0px;
+}
+
 .carousel-inner {
     text-align: center;
     margin-right: 11cm;
@@ -24,6 +28,10 @@
     /* margin-bottom: -75px; */
 }
 
+.carousel-indicators {
+	bottom: -15px;
+}
+
 .bi {
     color: black;
     font-size: 1.4em;
@@ -37,4 +45,12 @@
 .carousel-indicators li {
     background-color: black;
     height: 4px;
+}
+
+img.d-block {
+    margin-left: 1.6cm;
+}
+
+#amd, #ps5{
+    margin-top: -10px;
 }

@@ -52,10 +52,9 @@ function cambiarLoginVisibilidad() {
 }
 
 function loginCorrecto(nick) {
-  //loginBoton.getElementsByTagName('span').textContent = `Usuario: ${nick}`;
-  loginBoton.getElementsByTagName('span')[0].textContent=`Usuario: ${nick}`
-  //loginBoton.textContent = `Usuario: ${nick}`;
+  loginBoton.getElementsByTagName('span')[0].textContent=`${nick}`
   loginBoton.setAttribute("class","login-button");
+  document.getElementsByClassName("bi-person-circle")[0].style.color = "green";
   cambiarLoginVisibilidad();
 }
 
@@ -73,8 +72,8 @@ function mostrarLoginMensaje(mensaje, color) {
 // ############### EVENTOS DE BOTONES ######################
 // Boton de Login
 loginBoton.addEventListener("click", () => {
-  loginBoton.getElementsByTagName('span').textContent = "Inicio de sesión";
-  //loginBoton.textContent = "Inicio de sesión";
+  document.getElementsByClassName("bi-person-circle")[0].style.color = "initial";
+  loginBoton.getElementsByTagName("span")[0].textContent = "Inicio de sesión";
   cambiarLoginVisibilidad();
 });
 

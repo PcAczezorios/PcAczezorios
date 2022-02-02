@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/carrusel.css">
   <link rel="stylesheet" href="css/navBar-login.css">
+  <link rel="stylesheet" href="css/historia.css">
   <link rel="stylesheet" href="css/contacto.css">
 </head>
 
@@ -20,7 +21,7 @@
 
     <header>
       <div>
-        <img src="img/logo-violeta.png" width="138px" height="48px" onclick="location.href='index.html'"
+        <img src="img/logo-violeta.png" width="138" height="48" onclick="location.href='index.html'"
           alt="PcAczezorios" title="PcAczezorios">
         <nav>
           <ul>
@@ -33,7 +34,6 @@
       </div>
       <!-- Login -->
       <div id="div_login">
-        <img src="" alt="">
         <button><i class="bi bi-person-circle"></i><span>Inicio de sesión</span></button>
 
         <!-- Barra oculta de Login -->
@@ -46,11 +46,11 @@
               </div>
               <div>
                 <label for="login_nick" class="labels">Usuario:</label>
-                <input type="text" name="">
+                <input type="text" name="login_nick">
               </div>
               <div>
                 <label for="login_password" class="labels">Contraseña:</label>
-                <input type="password">
+                <input type="password" name="login_password">
               </div>
               <div>
                 <input type="submit" value="Acceder">
@@ -63,10 +63,106 @@
       </div>
     </header>
     <main id="contacto">
-	<h1>Contacto</h1>
-	<div class="texto">
-		<p>En proceso...</p>
-	</div>
+      <h1><img id="logo" src="img/logo-violeta-ventana.png" alt="logotipo">
+        Contacto</h1>
+
+      <div class="texto">
+        <form>
+          <fieldset>
+              <table class="tabla-contacto">
+                  <tr>
+                      <td>
+                          <label>Nombre:  </label>
+                          <input type="text"/>
+                      </td>
+                      <td>
+                          <label>Apellidos:  </label>
+                          <input type="text"/>
+                      </td>
+                  </tr>
+
+                  <tr>
+                      <td colspan="2">
+                          <label>Email:  </label>
+                          <input type="email"/>
+                      </td>
+                  </tr>
+  
+                  <tr>
+                      <td>
+                          <label>Sexo:  </label>
+                      </td>
+                      <td>
+                          <input type="radio" id="hombre" name="sexo" value="hombre"/>
+                          <label for="hombre">Hombre: </label>
+                          <input type="radio" id="mujer" name="sexo" value="mujer"/>
+                          <label for="mujer">Mujer:</label>
+                      </td>
+                  </tr>
+  
+                  <tr>
+                      <td>
+                          <label>Motivo de contacto:  </label>
+                      </td>
+                      <td>
+                          <div>
+                              <label>Componentes </label>
+                              <input type="checkbox" name="Aficiones" value="Deporte"/>
+                          </div>
+                          <div>
+                              <label>Ordenadores portatiles </label>
+                              <input type="checkbox" name="Aficiones" value="Lectura"/>
+                          </div>
+                          <div>
+                              <label>Otros </label>
+                              <input type="checkbox" name="Aficiones" value="Cine"/>
+                          </div>
+                      </td>
+                  </tr>
+  
+                  <tr>
+                      <td>
+                          <label>Pais:  </label>
+                      </td>
+                      <td>
+                      <select name="Pais:" class="select-pais">
+                          <option selected value="España">España</option>
+                          <option value="Andorra">Andorra</option>
+                          <option value="Mozambique">Mozambique</option>
+                      </select>
+                      </td>
+                  </tr>
+  
+                  <tr>
+                      <td>
+                          <label>Subir una foto descriptiva:  </label>
+                      </td>
+                      <td>
+                          <input type="file"/>
+                      </td>
+                  </tr>
+  
+                  <tr>
+                      <td>
+                          <label>Descripcion sobre el motivo de contacto:</label>
+                      </td>
+                      <td>
+                          <textarea name="descripcion" cols="40" rows="5" placeholder="Escriba aqui sobre el motivo de contacto"></textarea>
+                      </td>
+                  </tr>
+  
+                  <tr>
+                      <td>
+                          <input type="reset" value="Resetear" name="Resetear" class="boton-terciario"/>
+                      </td>
+                      <td>
+                          <button type="submit" value="Enviar" class="boton-primario" onclick="alert('Formulario enviado correctamente! Espere nuestro mensaje');">Enviar</button>
+                      </td>
+                  </tr>
+              </table>
+          </fieldset>
+      </form>
+      </div>
     </main>
 
   <footer>
@@ -85,5 +181,4 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
 </body>
-
 </html>

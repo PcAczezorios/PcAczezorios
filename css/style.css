@@ -9,6 +9,10 @@ body {
 	justify-content: space-between;
 }
 
+.oculto {
+	display: none;
+}
+
 header {
 	position: fixed;
 	width: 100%;
@@ -51,17 +55,18 @@ nav a {
 	flex-direction: row;
 	align-items: center;
 	transition: all .3s ease-in-out;
-}
+} 	nav a:hover,
+	nav a:active {
+		text-decoration: none;
+		background-color: #7539aa;
+		color: white;
+	}	nav a:hover i,
+		nav a:active i {
+			color: white;
+		}
 
-nav a:active {
-    background-color: #7539aa;
-    color: white;
-}
-
-nav a:hover {
-	text-decoration: none;
-	background-color: #7539aa;
-	color: white;
+nav a i{
+	transition: all .3s ease-in-out;
 }
 
 nav .bi {
@@ -70,14 +75,14 @@ nav .bi {
 }
 
 input[type=search] {
-	width: 300px;
+	width: 320px;
 	box-sizing: border-box;
 	border: 2px solid #ccc;
 	border-radius: 32px;
 	font-size: 16px;
 	background-color: white;
 	background-image: url('../icons/busqueda.svg');
-	background-position: 14px 14px;
+	background-position: 14px 17px;
 	background-repeat: no-repeat;
 	padding: 10px 20px 10px 40px;
 	margin-left: 10px;
@@ -86,7 +91,6 @@ input[type=search] {
 }
   
 input[type=search]:focus {
-	width: 450px;
 	outline: none;
 	border-color: #7539aa;
 }
@@ -99,33 +103,12 @@ input[type=search]::-webkit-search-cancel-button{
 	background-position-y: center;
 }
 
-button {
-	background-color: rgba(255,255,255,0.8);
-	border: none;
-	color: black;
-	padding: 10px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-flex;
-	flex-direction: row;
-	align-items: center;
-	font-size: 16px;
-	cursor: pointer;
-	border-radius: 5px;
-	outline: none;
-	transition: all .3s ease-in-out;
-}
-
-button:hover {
-	color: white;
-	background-color: #7539aa;
-}
-
 button:focus {
 	outline: none;
 }
 
-input[type=submit] {
+input[type=submit],
+button {
 	background-color: rgba(255,255,255,0.8);
 	border: none;
 	color: black;
@@ -135,15 +118,11 @@ input[type=submit] {
 	display: inline-block;
 	font-size: 16px;
 	margin: 4px 2px;
+	width: 100%;
 	cursor: pointer;
 	border-radius: 5px;
 	transition: all .3s ease-in-out;
 	outline: none;
-}
-
-input[type=submit]:hover {
-	color: white;
-	background-color: #7539aa;
 }
 
 button .bi {
@@ -170,8 +149,8 @@ button .bi {
 }
 
 main {
-	margin-top: 70px;
-	margin-bottom: 70px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 	padding-top: 5em; /* Espacio necesario equivalente a la altura del header */
 }
 
@@ -179,6 +158,50 @@ main h2 {
 	text-align: center;
 	font-weight: bold;
 	color: #7539aa;
+}
+
+main h3 {
+	text-align: center;
+	font-weight: medium;
+	color: #7539aa;
+}
+
+.boton-primario,
+.boton-secundario,
+.boton-terciario {
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: all .3s ease-in-out;
+	outline: none;
+}
+
+.boton-primario {
+    color: white;
+    background-color: #7539aa;
+    font-weight: bold;
+} .boton-primario:hover {
+	color: white;
+	background-color: #be91ff;
+}
+
+.boton-secundario {
+    color: #7539aa;
+    background-color: white;
+    border: solid 1px #7539aa;
+    font-weight: bold;
+} .boton-secundario:hover {
+	color: white;
+	background-color: #7539aa;
+}
+
+.boton-terciario {
+	border: none;
+	background: none;
+    color: #7539aa;
+    font-weight: bold;
+} .boton-terciario:hover {
+	color: #be91ff;
 }
 
 footer {
@@ -196,4 +219,57 @@ footer {
 footer > div{
     max-width: 1000px;
     margin: 0 auto;
+}
+
+#logo {
+	height: 30px;
+    width: auto;
+	margin-bottom: 6px;
+	margin-right: -2px;
+}
+
+nav a {
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+	padding: 10px;
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	transition: all .3s ease-in-out;
+} 	nav a:hover,
+	nav a:active {
+		text-decoration: none;
+		background-color: #7539aa;
+		color: white;
+	}	nav a:hover i,
+		nav a:active i {
+			color: white;
+		}
+
+.boton-inicio-ses, .carrito-a {
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+	padding: 10px;
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	transition: all .3s ease-in-out;
+}
+
+.boton-inicio-ses:hover, .boton-inicio-ses:active, .carrito-a:hover, .carrito-a:active {
+	text-decoration: none;
+	background-color: #7539aa;
+	color: white;
+}
+
+.carrito-a:hover i, .carrito-a:active i {
+	color: white;
+}
+
+.carrito-a i {
+	padding-right: 10px;
 }

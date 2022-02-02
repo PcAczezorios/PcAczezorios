@@ -14,12 +14,23 @@ header > div > input{
     position: relative;
     display: flex;
     padding-right: 70px;
+    min-width: 270px;
+    justify-content: center;
+}
+
+#div_login > button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #div_oculto_login{
     position: absolute;
     top: 35px;
-    left: -66px;
+    left: -53px;
     z-index: 90000;
     margin-top: 25px;
 }
@@ -40,7 +51,6 @@ header > div > input{
 
 #div_login .no_oculto{
     opacity: 1;
-    width: 290px;
     transition: all .3s;
 }
 
@@ -53,10 +63,21 @@ header > div > input{
 
 #div_oculto_login > form > fieldset{
     display: inline-flex;
-    gap: 10px 0;
+    gap: 15px 0;
     background-color: rgb(216, 216, 216);
     border-radius: 32px;
     text-align: center;
     flex-direction: column;
-    padding: 20px;
+    padding: 20px 35px;
+    width: 300px;
+}
+
+#div_oculto_login > form > fieldset > div:nth-of-type(-n+3){
+    display: grid;
+}
+
+/* Botonones de 'Acceder' y 'Registro' */
+#div_oculto_login > form > fieldset > div:last-of-type{
+    display: flex;
+
 }
