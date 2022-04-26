@@ -15,85 +15,88 @@
   <link rel="stylesheet" href="css/navBar-login.css">
   <link rel="stylesheet" href="css/historia.css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0BTQQE7J80"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0BTQQE7J80"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-0BTQQE7J80');
-</script>
+    gtag('config', 'G-0BTQQE7J80');
+  </script>
 </head>
 
 <body>
 
-    <header>
-      <div>
-        <img src="img/logo-violeta.png" width="138" height="48" onclick="location.href='index.html'"
-          alt="PcAczezorios" title="PcAczezorios">
-        <nav>
-          <ul>
-            <li><a href="index.html"><i class="bi bi-house-door-fill"></i>Inicio</a></li>
-            <li><a href="contacto.html"><i class="bi bi-telephone-fill"></i>Contacto</a></li>
-            <li><a href="historia.html"><i class="bi bi-info-circle-fill"></i>Sobre Nosotros</a></li>
-          </ul>
-        </nav>
-        <input type="search" placeholder="Búsqueda">
-      </div>
-      <!-- Login -->
-      <div id="div_login">
-        <button><i class="bi bi-person-circle"></i><span>Inicio de sesión</span></button>
+  <header>
+    <div>
+      <img src="img/logo-violeta.png" width="138" height="48" onclick="location.href='index.html'" alt="PcAczezorios"
+        title="PcAczezorios">
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="bi bi-house-door-fill"></i>Inicio</a></li>
+          <li><a href="contacto.html"><i class="bi bi-telephone-fill"></i>Contacto</a></li>
+          <li><a href="historia.html"><i class="bi bi-info-circle-fill"></i>Sobre Nosotros</a></li>
+        </ul>
+      </nav>
+      <input type="search" placeholder="Búsqueda">
+    </div>
+    <!-- Login -->
+    <div id="div_login">
+      <button><i class="bi bi-person-circle"></i><span>Inicio de sesión</span></button>
 
-        <!-- Barra oculta de Login -->
-        <!-- Unicamente a partir de aqui sería la parte útil -->
-        <div id="div_oculto_login" class="oculto">
-          <form action="#">
-            <fieldset>
-              <div>
-                <legend>Inicio de sesión</legend>
-              </div>
-              <div>
-                <label for="login_nick" class="labels">Usuario:</label>
-                <input type="text" name="login_nick">
-              </div>
-              <div>
-                <label for="login_password" class="labels">Contraseña:</label>
-                <input type="password" name="login_password">
-              </div>
-              <div>
-                <input type="submit" value="Acceder">
-                <button type="button">Registrarse</button>
-              </div>
-              <span class="oculto">* Usuario incorrecto</span>
-            </fieldset>
-          </form>
-        </div>
+      <!-- Barra oculta de Login -->
+      <!-- Unicamente a partir de aqui sería la parte útil -->
+      <div id="div_oculto_login" class="oculto">
+        <form action="#">
+          <fieldset>
+            <div>
+              <legend>Inicio de sesión</legend>
+            </div>
+            <div>
+              <label for="login_nick" class="labels">Usuario:</label>
+              <input type="text" name="login_nick">
+            </div>
+            <div>
+              <label for="login_password" class="labels">Contraseña:</label>
+              <input type="password" name="login_password">
+            </div>
+            <div>
+              <input type="submit" value="Acceder">
+              <button type="button">Registrarse</button>
+            </div>
+            <span class="oculto">* Usuario incorrecto</span>
+          </fieldset>
+        </form>
       </div>
-    </header>
-    <main id="sobre-nosotros">
-      <div>
-        <img id="logo" src="img/logo-violeta-ventana.png" alt="">
-        <h1>Sobre nosotros</h1>
-      </div>
+    </div>
+  </header>
+  <main id="sobre-nosotros">
+    <div>
+      <img id="logo" src="img/logo-violeta-ventana.png" alt="">
+      <h1>Sobre nosotros</h1>
+    </div>
 
-      <div class="texto">
-        <p>¡Hola! Nosotros somos PcAczezorios, una pequeña empresa creada en 2011 dedicada al marketing online, y que
-          hoy
-          en
-          día tiene un gran renombre entre los amantes de los ordenadores, gracias principalmente a nuestras funciones
-          de
-          comparador y tienda online de hardware y software para ordenadores. </p>
-        <p> Con sede central en Andorra, nuestra empresa aspira a incorporarse más aún al mercado tecnológico mediante
-          diversos proyectos. Entre estos proyectos de futuro se encuentran abrir tiendas fisicas de PcAczezorios por
-          toda
-          España (pero sin tributar allí) y crear una amplia tienda online de componentes para ordenadores (más bien,
-          mejorar la actual), además de desarrollar su correspodiente aplicación para dispositivos móviles.</p>
-      </div>
-    </main>
+    <div class="texto">
+      <p>¡Hola! Nosotros somos PcAczezorios, una pequeña empresa creada en 2011 dedicada al marketing online, y que
+        hoy
+        en
+        día tiene un gran renombre entre los amantes de los ordenadores, gracias principalmente a nuestras funciones
+        de
+        comparador y tienda online de hardware y software para ordenadores. </p>
+      <p> Con sede central en Andorra, nuestra empresa aspira a incorporarse más aún al mercado tecnológico mediante
+        diversos proyectos. Entre estos proyectos de futuro se encuentran abrir tiendas fisicas de PcAczezorios por
+        toda
+        España (pero sin tributar allí) y crear una amplia tienda online de componentes para ordenadores (más bien,
+        mejorar la actual), además de desarrollar su correspodiente aplicación para dispositivos móviles.</p>
+    </div>
+  </main>
 
   <footer>
     <div>
-      <h5>&COPY; Todos los derechos reservados a PcAczezorios - 2022</h5>
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia de Creative Commons"
+          style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Este obra está
+      bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">licencia de Creative Commons
+        Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional</a>.
     </div>
   </footer>
   <script src="js/login.js"></script>
